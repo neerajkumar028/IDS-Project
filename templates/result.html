@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Prediction Result</title>
+    <style>
+      body {
+        font-family: Arial;
+        background: #eef2f3;
+        text-align: center;
+        padding-top: 100px;
+      }
+      .box {
+        width: 400px;
+        margin: auto;
+        background: white;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px #777;
+      }
+      .result {
+        font-size: 26px;
+        font-weight: bold;
+      }
+      a {
+        display: block;
+        margin-top: 20px;
+        font-size: 18px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="box">
+      <p class="result" id="resultText">{{ result }}</p>
+      <a href="/">Back to Prediction</a>
+    </div>
+    <script>
+      document.getElementById("resultText").style.color = "{{ color }}";
+    </script>
+  </body>
+</html>

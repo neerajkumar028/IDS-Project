@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Heart Disease Prediction</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #eef2f3;
+            padding: 30px;
+        }
+        .container {
+            background: white;
+            padding: 25px;
+            width: 450px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px #999;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 6px;
+            margin-bottom: 15px;
+        }
+        button {
+            background: #0066cc;
+            padding: 10px;
+            width: 100%;
+            color: white;
+            border: none;
+            font-size: 16px;
+            border-radius: 6px;
+        }
+        button:hover {
+            background: #004c99;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Heart Disease Prediction</h2>
+
+        <form action="/predict" method="POST">
+
+            <label>Age</label>
+            <input type="number" step="any" name="age" required>
+
+            <label>Sex (1 = Male, 0 = Female)</label>
+            <input type="number" step="any" name="sex" required>
+
+            <label>Chest Pain Type (0–3)</label>
+            <input type="number" step="any" name="cp" required>
+
+            <label>Resting BP</label>
+            <input type="number" step="any" name="trestbps" required>
+
+            <label>Cholesterol</label>
+            <input type="number" step="any" name="chol" required>
+
+            <label>Fasting Blood Sugar</label>
+            <input type="number" step="any" name="fbs" required>
+
+            <label>Rest ECG</label>
+            <input type="number" step="any" name="restecg" required>
+
+            <label>Max Heart Rate</label>
+            <input type="number" step="any" name="thalach" required>
+
+            <label>Exercise Angina</label>
+            <input type="number" step="any" name="exang" required>
+
+            <label>Oldpeak</label>
+            <input type="number" step="any" name="oldpeak" required>
+
+            <label>Slope</label>
+            <input type="number" step="any" name="slope" required>
+
+            <label>CA</label>
+            <input type="number" step="any" name="ca" required>
+
+            <label>Thal</label>
+            <input type="number" step="any" name="thal" required>
+
+            <label>Country (1=Cleveland, 2=Switzerland, 3=Hungary, 4=US)</label>
+            <input type="number" step="any" name="country" required>
+
+            <button type="submit">Predict</button>
+        </form>
+
+    </div>
+</body>
+</html>
